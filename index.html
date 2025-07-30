@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soyam Sudha Rout - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #bebad0;
+      color: #2c3e50;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #344ad9;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fa709a;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #555;
+    }
+    .hero a {
+      display: inline-block;
+      margin-top: 30px;
+      background: #f6d365;
+      color: #222;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .hero a:hover {
+      background: #fa709a;
+      color: white;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f8f8f8;
+      font-size: 0.9rem;
+    }
+    .social img {
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+    .social img:hover {
+      transform: scale(1.2);
+    }
+    form button {
+      background-color: #fa709a;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background-color: #f6d365;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Soyam Sudha Rout</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#extras">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <h1>Hey, I'm Soyam Sudha Rout 👋</h1>
+    <p>Web Developer | Python Programmer | Cybersecurity Enthusiast</p>
+    <a href="Soyam_Sudha_Rout_Resume[1].docx" download>📄 Download Resume</a>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Huffman Compression Tool</h3>
+        <p>Python tool that compresses and decompresses files using Huffman coding algorithm.</p>
+      </div>
+      <div class="project">
+        <h3>Pathfinding Visualizer</h3>
+        <p>A DSA-based visualizer for algorithms like Dijkstra, A*, BFS, and DFS built with JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="extras" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I'm a 3rd Year BTech CSE student at DRIEMS University. My interests include web development, Python, cybersecurity, and data science. I'm passionate about coding and constantly improving my skills.</p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript, Python, C</li>
+      <li>Data Structures and Algorithms</li>
+      <li>Frontend Development</li>
+      <li>Cybersecurity Basics</li>
+    </ul>
+
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Novel Reading</li>
+      <li>Painting</li>
+      <li>Dancing</li>
+    </ul>
+
+    <h3>Languages Known</h3>
+    <ul>
+      <li>English, Hindi, Odia</li>
+    </ul>
+
+    <h3>Certificates</h3>
+    <ul>
+      <li>Web Development Certificate Course</li>
+      <li>Introduction to Cybersecurity - Cisco</li>
+      <li>Cybersecurity Essentials - Cisco</li>
+      <li>Python Programming (In Progress)</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social">
+      <a href="https://github.com/Sanna6463" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30" />
+      </a>
+      <a href="https://www.linkedin.com/in/soyamsudharout" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="30" />
+      </a>
+      <a href="mailto:soyamsudharout@gmail.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" width="30" />
+      </a>
+      <a href="https://twitter.com/SoyamSudha" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" width="30" />
+      </a>
+      <a href="https://instagram.com/its_sanna_05" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Soyam Sudha Rout. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
